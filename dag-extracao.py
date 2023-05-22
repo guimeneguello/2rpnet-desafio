@@ -1,3 +1,9 @@
+## o meio que encontrei de trabalhar nesse problema
+## envolve criar uma DAG e colocá-la no airflow
+## para rodar todo mês, porém não consegui
+## configurar um airflow local no tempo dado.
+## também não consegui abordar o problema corretamente
+
 from airflow.models import DAG
 import pendulum
 from airflow.operators.bash_operator import BashOperator
@@ -5,10 +11,6 @@ from airflow.operators.python_operator import PythonOperator
 from airflow.macros import ds_add
 import pandas as pd
 
-## o meio que encontrei de trabalhar nesse problema
-## envolve criar uma DAG e colocá-la no airflow
-## para rodar todo mês, porém não consegui
-## configurar um airflow local no tempo dado
 
 with DAG(
     "dados_novos",
